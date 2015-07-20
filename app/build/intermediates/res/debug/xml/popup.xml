@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:keyHeight="10%p"
+    android:keyBackground="@drawable/keybackground"
+    android:background="@color/gray_material"
+    android:keyTextColor="@color/lightgray_material">
+</Keyboard><!-- From: file:/D:/Programmi/Android/AndroidStudioProject/UnipiazzaKeyboard/app/src/main/res/xml/popup.xml -->

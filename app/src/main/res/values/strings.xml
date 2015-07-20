@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UnipiazzaKeyboard</string>
+    <string name="simple_ime">Unipiazza Keyboard</string>
+    <string name="subtype_en_US">Italiano (IT)</string>
+    <color name="orange">#F58220</color>    
+    <color name="lightgray_material">#d3d5d6</color>  
+    <color name="gray_material">#384248</color>
+    <color name="preview_material">#999999</color>     
+</resources>

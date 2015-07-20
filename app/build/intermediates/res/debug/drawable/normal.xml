@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
+    
+<!-- Colore BTN -->  
+	<solid android:color="@color/gray_material"/> 
+ 
+  
+</shape><!-- From: file:/D:/Programmi/Android/AndroidStudioProject/UnipiazzaKeyboard/app/src/main/res/drawable/normal.xml -->
