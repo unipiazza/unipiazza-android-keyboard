@@ -5,7 +5,6 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.inputmethodservice.KeyboardView.OnKeyboardActionListener;
 import android.media.AudioManager;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -46,11 +45,6 @@ public class UnipiazzaKeyboard extends InputMethodService
             case Keyboard.KEYCODE_DELETE:
                 ic.deleteSurroundingText(1, 0);
                 break;
-            case Keyboard.KEYCODE_SHIFT:
-                caps = !caps;
-                mCurrentKeyboard.setShifted(caps);
-                kv.invalidateAllKeys();
-                break;
             case Keyboard.KEYCODE_DONE:
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
                 break;
@@ -59,14 +53,15 @@ public class UnipiazzaKeyboard extends InputMethodService
                 if (Character.isLetter(code) && caps) {
                     code = Character.toUpperCase(code);
                 }
-                ic.commitText(String.valueOf(code), 1);
+                String string = String.valueOf(code);
+
+                ic.commitText(string, 1);
         }
     }
 
     @Override
     public View onCreateInputView() {
         kv = (KeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
-        Log.v("UNIPIAZZA", "onCreateInputView, mCurrentKeyboard=" + mCurrentKeyboard);
         mCurrentKeyboard = textKeyboard;
         kv.setKeyboard(mCurrentKeyboard);
         kv.setOnKeyboardActionListener(this);
@@ -120,10 +115,8 @@ public class UnipiazzaKeyboard extends InputMethodService
         switch (info.inputType & EditorInfo.TYPE_MASK_VARIATION) {
             case EditorInfo.TYPE_TEXT_VARIATION_EMAIL_ADDRESS:
                 mCurrentKeyboard = emailKeyboard;
-                Log.v("UNIPIAZZA", "emailKeyboard, mCurrentKeyboard=" + mCurrentKeyboard);
         }
 
-        Log.v("UNIPIAZZA", "mCurrentKeyboard=" + mCurrentKeyboard);
         kv.setKeyboard(mCurrentKeyboard);
     }
 }
