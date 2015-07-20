@@ -164,4 +164,31 @@
             android:keyLabel="_"
             android:keyWidth="9%p" />
     </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key
+            android:keyEdgeFlags="left"
+            android:keyLabel="\@hotmail.com"
+            android:keyOutputText="\@hotmail.com"
+            android:keyWidth="18%p" />
+        <Key
+            android:keyLabel="\@yahoo.it"
+            android:keyOutputText="\@yahoo.it"
+            android:keyWidth="18%p" />
+        <Key
+            android:keyLabel="\@gmail.com"
+            android:keyOutputText="\@gmail.com"
+            android:keyWidth="18%p" />
+        <Key
+            android:codes="64"
+            android:keyLabel="\@"
+            android:keyWidth="9%p" />
+        <Key
+            android:keyLabel=".IT"
+            android:keyOutputText=".it"
+            android:keyWidth="11%p" />
+        <Key
+            android:keyLabel=".COM"
+            android:keyOutputText=".com"
+            android:keyWidth="11%p" />
+    </Row>
 </Keyboard>

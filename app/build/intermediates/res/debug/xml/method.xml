@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<input-method xmlns:android="http://schemas.android.com/apk/res/android"> 
-    <subtype
-        android:label="Zizza"      
-        android:imeSubtypeLocale="it_IT"
-        android:imeSubtypeMode="keyboard" />
-</input-method><!-- From: file:/D:/Programmi/Android/AndroidStudioProject/UnipiazzaKeyboard/app/src/main/res/xml/method.xml -->
