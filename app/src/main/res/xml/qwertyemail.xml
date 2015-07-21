@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyHeight="9%p"
+    android:keyHeight="10%p"
     android:keyWidth="9%p">
 
     <Row>
@@ -86,7 +86,7 @@
             android:codes="-5"
             android:isRepeatable="true"
             android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/sym_keyboard_delete_lxx_dark"
+            android:keyIcon="@drawable/sym_keyboard_delete_holo_dark"
             android:keyWidth="11.1%p" />
 
     </Row>
@@ -169,26 +169,26 @@
             android:keyEdgeFlags="left"
             android:keyLabel="\@hotmail.com"
             android:keyOutputText="\@hotmail.com"
-            android:keyWidth="18%p" />
+            android:keyWidth="22%p" />
         <Key
             android:keyLabel="\@yahoo.it"
             android:keyOutputText="\@yahoo.it"
-            android:keyWidth="18%p" />
+            android:keyWidth="22%p" />
         <Key
             android:keyLabel="\@gmail.com"
             android:keyOutputText="\@gmail.com"
-            android:keyWidth="18%p" />
+            android:keyWidth="22%p" />
         <Key
             android:codes="64"
             android:keyLabel="\@"
-            android:keyWidth="9%p" />
+            android:keyWidth="10%p" />
         <Key
             android:keyLabel=".IT"
             android:keyOutputText=".it"
-            android:keyWidth="11%p" />
+            android:keyWidth="12%p" />
         <Key
             android:keyLabel=".COM"
             android:keyOutputText=".com"
-            android:keyWidth="11%p" />
+            android:keyWidth="12%p" />
     </Row>
 </Keyboard>
