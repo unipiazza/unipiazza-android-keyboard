@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyHeight="10%p"
+    android:keyHeight="12%p"
     android:keyWidth="9%p">
 
-    <Row>
+    <Row android:keyHeight="11%p">
         <Key
             android:codes="49"
             android:horizontalGap="4.75%p"
@@ -164,19 +164,20 @@
             android:keyLabel="_"
             android:keyWidth="9%p" />
     </Row>
-    <Row android:rowEdgeFlags="bottom">
+    <Row android:rowEdgeFlags="bottom"
+         android:keyHeight="10%p">
+        <Key
+            android:keyLabel="\@gmail.com"
+            android:keyOutputText="\@gmail.com"
+            android:keyWidth="22%p" />
         <Key
             android:keyEdgeFlags="left"
             android:keyLabel="\@hotmail.com"
             android:keyOutputText="\@hotmail.com"
             android:keyWidth="22%p" />
         <Key
-            android:keyLabel="\@yahoo.it"
-            android:keyOutputText="\@yahoo.it"
-            android:keyWidth="22%p" />
-        <Key
-            android:keyLabel="\@gmail.com"
-            android:keyOutputText="\@gmail.com"
+            android:keyLabel="\@libero.it"
+            android:keyOutputText="\@libero.it"
             android:keyWidth="22%p" />
         <Key
             android:codes="64"
