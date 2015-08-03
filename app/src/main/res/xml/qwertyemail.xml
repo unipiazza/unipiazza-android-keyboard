@@ -164,14 +164,14 @@
             android:keyLabel="_"
             android:keyWidth="9%p" />
     </Row>
-    <Row android:rowEdgeFlags="bottom"
-         android:keyHeight="10%p">
+    <Row
+        android:keyHeight="10%p"
+        android:rowEdgeFlags="bottom">
         <Key
             android:keyLabel="\@gmail.com"
             android:keyOutputText="\@gmail.com"
             android:keyWidth="22%p" />
         <Key
-            android:keyEdgeFlags="left"
             android:keyLabel="\@hotmail.com"
             android:keyOutputText="\@hotmail.com"
             android:keyWidth="22%p" />
